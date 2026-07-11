@@ -1,9 +1,9 @@
-// Pattern-2: Right-Angled Triangle Pattern
-// *
-// **
-// ***
-// ****
-// *****
+// Pattern - 4: Right-Angled Number Pyramid - II
+// 1
+// 22
+// 333
+// 4444
+// 55555
 
 // Problem Statement: Given an integer N, print the following pattern :
 
@@ -12,11 +12,11 @@ using namespace std;
 
 void pattern(int n)
 {
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (int j = 1; j <= i; j++)
         {
-            cout << "*";
+            cout << i << " ";
         }
         cout << "\n";
     }

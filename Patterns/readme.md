@@ -13,13 +13,22 @@ STEPS TO FOLLOW WHILE SOLVING ANY PATTERN PROBLEM:
 BOILER PLATE:
 <!--
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+void pattern(int n)
+{
     
+}
 
-    
+int main()
+{
+
+    int a;
+    cout << "enter the no.: ";
+    cin >> a;
+    pattern(a);
+
     return 0;
 }
 
