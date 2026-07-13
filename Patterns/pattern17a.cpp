@@ -1,8 +1,8 @@
-// Pattern - 12: Number Crown Pattern
-// 1      1
-// 12    21
-// 123  321
-// 12344321
+// Pattern - 17a: Alpha-Hill Pattern
+//    1
+//   212
+//  32123
+// 4321234
 // Problem Statement: Given an integer N, print the following pattern :
 
 #include <bits/stdc++.h>
@@ -12,22 +12,27 @@ void pattern(int n)
 {
     for (int i = 1; i <= n; i++)
     {
-        // number
-        for (int j = 1; j <= i; j++)
-        {
-            cout << j;
-        }
-        // spaces
-        for (int j = 0; j < 2 * n - 2 * i; j++)
+        // space
+        for (int j = n; j > i; j--)
         {
             cout << " ";
         }
-        // numbers
+        // char
         for (int j = i; j >= 1; j--)
         {
             cout << j;
         }
-
+        // char
+        for (int j = 2; j <= i; j++)
+        {
+            if (i != 1)
+                cout << j;
+        }
+        // space
+        for (int j = n; j > i; j--)
+        {
+            cout << " ";
+        }
         cout << "\n";
     }
 }
