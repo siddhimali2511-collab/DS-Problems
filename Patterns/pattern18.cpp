@@ -11,9 +11,9 @@ using namespace std;
 
 void pattern(int n)
 {
-    for (int i = n; i > 0; i--)
+    for (int i = 0; i < n - 1; i++)
     {
-        for (char j = 'A' + i; j >= 'A'; j--)
+        for (char j = 'E'; j >= 'E' - i; j--)
         {
             cout << j;
         }
