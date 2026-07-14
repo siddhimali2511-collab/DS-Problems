@@ -11,11 +11,11 @@ using namespace std;
 
 void pattern(int n)
 {
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 1; i <= n; i++)
     {
-        for (char j = 'E'; j >= 'E' - i; j--)
+        for (char j = (n - i) + 'A'; j <= (n - 1) + 'A'; j++)
         {
-            cout << j;
+            cout << j << " ";
         }
         cout << "\n";
     }

@@ -1,46 +1,60 @@
-// enter the no.: 5
-
 // Pattern no. 1
-// 1
-// 1 2
-// 1 2 3
-// 1 2 3 4
-// 1 2 3 4 5
+// 1 
+// 1 2 
+// 1 2 3 
+// 1 2 3 4 
+// 1 2 3 4 5 
 
 // Pattern no. 2
-// 1 2 3 4 5
-// 1 2 3 4
-// 1 2 3
-// 1 2
-// 1
+// 1 2 3 4 5 
+// 1 2 3 4 
+// 1 2 3 
+// 1 2 
+// 1 
 
 // Pattern no. 3
-// 1
-// 2 1
-// 3 2 1
-// 4 3 2 1
-// 5 4 3 2 1
+// 1 
+// 2 1 
+// 3 2 1 
+// 4 3 2 1 
+// 5 4 3 2 1 
 
 // Pattern no. 4
-// 5 4 3 2 1
-// 4 3 2 1
-// 3 2 1
-// 2 1
-// 1
+// 5 4 3 2 1 
+// 4 3 2 1 
+// 3 2 1 
+// 2 1 
+// 1 
 
 // Pattern no. 5
-// 5
-// 5 4
-// 5 4 3
-// 5 4 3 2
-// 5 4 3 2 1
+// 5 
+// 5 4 
+// 5 4 3 
+// 5 4 3 2 
+// 5 4 3 2 1 
 
 // Pattern no. 6
-// 5 4 3 2 1
-// 5 4 3 2
-// 5 4 3
-// 5 4
-// 5
+// 5 4 3 2 1 
+// 5 4 3 2 
+// 5 4 3 
+// 5 4 
+// 5 
+
+// Pattern no. 7
+// 5 
+// 4 5 
+// 3 4 5 
+// 2 3 4 5 
+// 1 2 3 4 5 
+
+// Pattern no. 8
+// 1 2 3 4 5 
+// 2 3 4 5 
+// 3 4 5 
+// 4 5 
+// 5 
+
+
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -117,6 +131,30 @@ void pattern6(int n)
     }
 }
 
+void pattern7(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = n - i + 1; j <= n; j++)
+        {
+            cout << j << " ";
+        }
+        cout << "\n";
+    }
+}
+
+void pattern8(int n)
+{
+    for (int i = n; i >= 1; i--)
+    {
+        for (int j = n - i + 1; j <= n; j++)
+        {
+            cout << j << " ";
+        }
+        cout << "\n";
+    }
+}
+
 int main()
 {
 
@@ -141,6 +179,12 @@ int main()
     cout << "\n";
     cout << "Pattern no. 6" << "\n";
     pattern6(x);
+    cout << "\n";
+    cout << "Pattern no. 7" << "\n";
+    pattern7(x);
+    cout << "\n";
+    cout << "Pattern no. 8" << "\n";
+    pattern8(x);
     cout << "\n";
 
     return 0;

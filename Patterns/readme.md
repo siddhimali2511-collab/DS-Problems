@@ -40,11 +40,26 @@ General logic:
 
 2. Rectangel -> i=j = any constants
 
-3. Triangle -> i loops till n for n rows and j loops till i.(pattern 2,3,4)
-
-<!-- 4. upside down triangle -> i's signs are always opposite of j's(so lets say if i is incrementing, j is decrementing).(pattern 5)
-     1. If we want the start of the triangle to be small to large(lets say the first like is 1 2 3 4 5, then 1 2 3 4), then we initiate i at n and decrement, as j has to increment.(as in these types we print j, so there is still space for j to loop in some direction).(pattern 6)
-     2. j decrements & i increments if the start of the row need to be the bigger no(5 4 3 2 1, 4 3 2 1).(pattern 12's last j for loop) -->
+3. Triangle -> 
+    1. Star triangle: i and j different, do according to normal logic.
+    2. no. triangle: 
+        1. all row items are same: print i inside j loop.
+        2. row items are different(incresing, decresing etc.)
+           1. i++ : normal triangle  
+           2. i-- : upside down triangle
+           3. j++ : nos increase in a row
+           4. j-- : nos decrease in a row
+           5. i always iterates from 1->n or n->1(according to increment decrement).
+           6. j iterates 3 ways
+               1. 1 -> i : rows start at 1  
+               2. i -> 1 : row's start is largest of the line and ends in 1
+               1. n -> n - i + 1 : rows start at n 
+               1. n - i + 1 -> n : row's start is smallest of the line and ends in 1
+    3. Alphabet triangle: all the same rules of the number triangle
+       Rules:
+       1. Can only iterate form char to char
+       2. Can only print from char to char
+       3. addition can be done between char and int(eg.: char 'A' + 1 = B)     
 
 5. For designs like isoceles triangle -> we use [space]-[character]-[space] pattern and write 3 indevidual loops for each inside the main i loop. j for each loop runs based on the number of that space or character needed(formula calculated through observation and should contain i, n is also sometimes required).(pattern 7,8)
 
@@ -57,3 +72,4 @@ General logic:
 8. For continuous numbers -> initialize a no. outside of the loop and then increment it on each print(i.e. inside the j loop)(pattern 13)
 
 9. patterns with ABC -> alphabets can be treated as numbers!, just initiate char 'A'(eg.: 'A'+1 -> 'B').(pattern 14, 15, 16)
+
