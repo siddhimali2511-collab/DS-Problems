@@ -1,4 +1,3 @@
-
 // enter the no.: 5
 
 // Pattern no. 1
@@ -46,7 +45,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void patterna(int n)
+void pattern1(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -58,7 +57,7 @@ void patterna(int n)
     }
 }
 
-void patternb(int n)
+void pattern2(int n)
 {
     for (int i = n; i >= 1; i--)
     {
@@ -70,7 +69,7 @@ void patternb(int n)
     }
 }
 
-void patternc(int n)
+void pattern3(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -82,7 +81,7 @@ void patternc(int n)
     }
 }
 
-void patternd(int n)
+void pattern4(int n)
 {
     for (int i = n; i >= 1; i--)
     {
@@ -94,7 +93,7 @@ void patternd(int n)
     }
 }
 
-void patterne(int n)
+void pattern5(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -106,7 +105,7 @@ void patterne(int n)
     }
 }
 
-void patternf(int n)
+void pattern6(int n)
 {
     for (int i = n; i >= 1; i--)
     {
@@ -126,22 +125,22 @@ int main()
     cin >> x;
     cout << "\n";
     cout << "Pattern no. 1" << "\n";
-    patterna(x);
+    pattern1(x);
     cout << "\n";
     cout << "Pattern no. 2" << "\n";
-    patternb(x);
+    pattern2(x);
     cout << "\n";
     cout << "Pattern no. 3" << "\n";
-    patternc(x);
+    pattern3(x);
     cout << "\n";
     cout << "Pattern no. 4" << "\n";
-    patternd(x);
+    pattern4(x);
     cout << "\n";
     cout << "Pattern no. 5" << "\n";
-    patterne(x);
+    pattern5(x);
     cout << "\n";
     cout << "Pattern no. 6" << "\n";
-    patternf(x);
+    pattern6(x);
     cout << "\n";
 
     return 0;
