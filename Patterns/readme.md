@@ -1,4 +1,4 @@
-STEPS TO FOLLOW WHILE SOLVING ANY PATTERN PROBLEM:
+# STEPS TO FOLLOW WHILE SOLVING ANY PATTERN PROBLEM:
 
 (1) for the outer loop, count the no. of lines
 
@@ -10,7 +10,7 @@ STEPS TO FOLLOW WHILE SOLVING ANY PATTERN PROBLEM:
 
 (4) Observe symmetry (optional)
 
-BOILER PLATE:
+# BOILER PLATE:
 <!--
 
 #include <bits/stdc++.h>
@@ -34,7 +34,7 @@ int main()
 
 -->
 
-General logic:
+# General logic:
 1. i = rows
    j = columns
 
