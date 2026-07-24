@@ -19,7 +19,7 @@ int main()
 
     vector<int> v4(v2); // now v4 will be a copy of v2
 
-    vector<int>::iterator abc = v.begin(); // iterator points to the memory adress where the first item is(i.e. 1) **begin is the iterator**
+    vector<int>::iterator abc = v.begin(); // iterator begin points to the memory adress where the first item is(i.e. 1) **begin is the iterator**
     abc++;                                 // now the pointer is to then next memory adress in the vector(i.e. 2)
     cout << *(abc) << " ";
     vector<int>::iterator it = v.end(); // the end iterator points to the place right after the last item(i.e. it will point {1,2}_<- here)
@@ -34,6 +34,7 @@ int main()
 
     cout << v.back() << "\n"; // will print the last element of the vector, so 2
 
+    // Loops for vectors using iterators
     vector<int> vec = {10, 20, 30};
     for (vector<int>::iterator x = vec.begin(); x != vec.end(); x++)
     {
@@ -63,6 +64,32 @@ int main()
     // reasing multiple
     //{1,2,3,4,5,6,7,8}
     v.erase(v.begin() + 1, v.begin() + 5); // the format is erase [start, end), so it will erase from 2 to 4, i.e the new array is {1,6,7,8}
+
+    // insert function
+    //{1,2,3,4,5,6,7,8}
+    v.insert(v.begin(), 20);        //{20,1,2,3,4,5,6,7,8}
+    v.insert(v.begin() + 1, 2, 10); //{1,10,10,2,3,4,5,6,7,8} basically will add 2 instances of 10 at potisoion 1+begin(i.e. just after the first)
+
+    // to insert an entire vector inside another vector
+    vector<int> vec2(2, 5);
+    v.insert(v.begin(), vec2.begin(), vec2.end()); // will insert vec2 from begining to end inside v at he begining
+
+    // size
+    //{10,20}
+    cout << v.size(); // will give you how may elements are inside the vector(2)
+
+    // pop
+    //{10,20}
+    v.pop_back(); // will pop the last element(i.e.20)
+
+    // swap
+    // v1->{10,20}
+    // v2->{30,40}
+    v1.swap(v2); // v1->{30,40}, v2->{10,20}
+
+    v.clear(); // erases the entire vector
+
+    cout << v.empty(); // gives true of vector is empty, and false if vector has any elemet 
 
     return 0;
 }
