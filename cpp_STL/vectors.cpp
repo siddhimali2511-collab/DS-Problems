@@ -46,7 +46,7 @@ int main()
     auto b = 5; // it will automatically detect what 5 is and work accordingly
 
     // auto can be used so we dont have to write the whole iterator syntax
-    for (auto x = vec.begin(); x != vec.end(); x++)
+    for (auto x = vec.begin(); x != vec.end(); x++) // vector<int>::iterator = auto
     {
         cout << *(x) << "\n";
     }
@@ -83,13 +83,13 @@ int main()
     v.pop_back(); // will pop the last element(i.e.20)
 
     // swap
-    // v1->{10,20}
-    // v2->{30,40}
-    v1.swap(v2); // v1->{30,40}, v2->{10,20}
+    vector<int> v1; // v1->{10,20}
+    vector<int> v2; // v2->{30,40}
+    v1.swap(v2);    // v1->{30,40}, v2->{10,20}
 
     v.clear(); // erases the entire vector
 
-    cout << v.empty(); // gives true of vector is empty, and false if vector has any elemet 
+    cout << v.empty(); // gives true of vector is empty, and false if vector has any elemet
 
     return 0;
 }
