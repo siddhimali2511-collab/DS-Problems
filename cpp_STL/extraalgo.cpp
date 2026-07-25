@@ -51,5 +51,5 @@ int main()
 
     int maxi = *max_element(a, a + n);
 
-        return 0;
+    return 0;
 }
