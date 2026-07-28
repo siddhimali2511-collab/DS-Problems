@@ -13,5 +13,6 @@ int main()
         cout << n % 10 << endl;
         n = n / 10;
     }
+
     return 0;
 }
