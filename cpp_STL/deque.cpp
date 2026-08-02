@@ -1,4 +1,4 @@
-// Deque
+// Deque - double ended queue
 #include <bits/stdc++.h>
 using namespace std;
 
