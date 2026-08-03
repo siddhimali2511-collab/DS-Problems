@@ -19,16 +19,19 @@ int main()
         cin >> arr[i];
     }
 
+    // hash logic
     int hash[13] = {0};
     for (int i = 0; i < n; i++)
     {
         hash[arr[i]] += 1;
     }
 
+    // take quries
     int q;
     cout << "enter the number of quries: ";
     cin >> q;
 
+    // execute quries
     while (q--)
     {
         int num;
